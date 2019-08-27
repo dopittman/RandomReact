@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Calculator from './Components/Calculator';
+import Clock from './Components/Clock';
+import Tabs from './Components/Tabs';
 
-function App() {
+
+class App extends React.Component {
+
+  state = {
+    Tabs : [
+      {title:'Tab One',
+      content: 'Content One'},
+      {title:'Tab Two',
+      content: 'Content Two'},
+      {title:'Tab Three',
+      content: 'Content Three'}
+    ]
+  }
+
+  render(){
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Calculator />
+        <Clock />
+        <Tabs
+          tabs={this.state.Tabs}
+        />
       </header>
     </div>
   );
+  }
 }
 
 export default App;
