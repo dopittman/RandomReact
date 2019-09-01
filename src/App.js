@@ -3,17 +3,18 @@ import './App.css';
 import Calculator from './Components/Calculator';
 import Clock from './Components/Clock';
 import Tabs from './Components/Tabs';
+import Typing from './Components/Typing';
 
 
 class App extends React.Component {
 
   state = {
     Tabs : [
-      {title:'Tab One',
+      {title:'One',
       content: 'Content One'},
-      {title:'Tab Two',
+      {title:'Two',
       content: 'Content Two'},
-      {title:'Tab Three',
+      {title:'Three',
       content: 'Content Three'}
     ]
   }
@@ -23,6 +24,7 @@ class App extends React.Component {
     <div className="App">
       <header className="App-header">
         <Calculator />
+        <Typing />
         <Clock />
         <Tabs
           tabs={this.state.Tabs}

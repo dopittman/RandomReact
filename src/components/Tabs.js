@@ -1,5 +1,5 @@
 import React from 'react'
-import TabsHeader from './TabsHeader'
+import TabsHeader from './TabComponents/TabsHeader'
 
 class Tabs extends React.Component {
   constructor(props){
@@ -7,25 +7,25 @@ class Tabs extends React.Component {
 
     this.state = {
       tabIndex: 0,
-      test: ''
     }
+
+    this.updateTab = this.updateTab.bind(this);
   }
 
-  showTabs(arr, query){
-    let collector = [];
-    for(let i = 0; i < arr.length; i++){
-      collector.push(arr[i][query])
-    }
-    return collector;
+// Updates active tab and article
+  updateTab(newVal){
+    this.setState({tabIndex: newVal})
   }
 
   render(){
     return(
-      <div>
-      <TabsHeader
-        headers={this.showTabs(this.props.tabs, 'title')}
-      />
-      {/* <ul id='tabUL'>{this.showTabs(this.props.tabs, this.state.tabIndex)}</ul> */}
+      <div className='tabs-container'>
+        <TabsHeader
+          tabs= {this.props.tabs}
+          updateTab={this.updateTab}
+          activeTab={this.state.tabIndex}
+        />
+        <article className='content'>{this.props.tabs[this.state.tabIndex].content}</article>
       </div>
     )
   }
