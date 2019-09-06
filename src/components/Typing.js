@@ -5,7 +5,7 @@ class typing extends React.Component {
 
   componentDidMount(){
     let options = {
-      strings: ['Type things like this', 'And like this'],
+      strings: ['my random react widgets', 'testing components', 'optimizing code','all kinds of things'],
       typeSpeed: 35,
       backSpeed: 35,
       backDelay: 2000,
@@ -20,7 +20,9 @@ class typing extends React.Component {
 
   render(){
     return(
-  <div class='typing'></div>
+    <div className='typing-div'>
+    <span>This page is for </span>
+  <span className='typing' /></div>
     )}
 }
 

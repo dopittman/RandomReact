@@ -75,7 +75,8 @@ class Calculator extends React.Component {
           userInputTwo: this.state.userInputTwo, total: this.state.total}
 
     return(
-      <div>
+      <div className='calc-div'>
+      <span>Simple Calc</span><hr/>
       <div>
         <span>Input One: <input type='text'
         value={userInputOne}

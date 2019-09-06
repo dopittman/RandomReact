@@ -4,6 +4,7 @@ import Calculator from './Components/Calculator';
 import Clock from './Components/Clock';
 import Tabs from './Components/Tabs';
 import Typing from './Components/Typing';
+import RouteTest from './Components/RouteTest'
 
 
 class App extends React.Component {
@@ -22,14 +23,15 @@ class App extends React.Component {
   render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <Calculator />
+      <div className="App-header">
         <Typing />
+        <Calculator />
         <Clock />
+        <RouteTest />
         <Tabs
           tabs={this.state.Tabs}
         />
-      </header>
+      </div>
     </div>
   );
   }

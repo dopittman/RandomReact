@@ -24,6 +24,7 @@ class Clock extends React.Component {
   render(){
     return(
       <div className='clock-widget'>
+      <span>Clock</span><hr />
         <h3>
         <span className='clock-info clock-header'>Date: {this.state.time.toDateString()}</span></h3>
         <h4><span className='clock-header'>Time: </span>

@@ -1,11 +1,8 @@
-body {
-  font-family: "Open Sans";
-  line-height: 1.2;
-}
-
 .App {
   text-align: center;
+  height: 100%;
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -20,6 +17,19 @@ body {
 
 .App-link {
   color: #61dafb;
+}
+
+.calc-div {
+  width:30%;
+  border: 3px solid #849695;
+  border-radius: 8%;
+  margin-bottom: 3%;
+
+}
+
+.typing-div {
+  height: 40px;
+  margin-bottom: 2%;
 }
 
 .clock-header {
