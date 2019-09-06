@@ -43,7 +43,33 @@
   border-radius: 5%;
 }
 
+.nav-div {
+  width: 450px;
+  margin-top: 30px;
+  border: 3px solid white;
+  border-radius: 3%;
+}
+
+.nav-div li {
+
+}
+
+.nav-link {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-content {
+  margin-top: 30px;
+  padding-bottom: 120px;
+  border: 3px solid tomato;
+}
+
 .tabs-container {
+  margin-top: 20px;
   width: 50%;
   height: 200px;
 }
