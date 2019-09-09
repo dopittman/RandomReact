@@ -8,8 +8,9 @@ const Nav = () => {
   return (
     <Router>
     <div className='nav-div'>
-      <Link to='/routeone'><li className='nav-link'>Page One</li></Link>
-      <Link to='/routetwo'><li className='nav-link'>Page Two</li></Link>
+    <h2>React Router Widget</h2><hr />
+      <Link to='/routeone'><li className='nav-link'>Open Page One</li></Link>
+      <Link to='/routetwo'><li className='nav-link'>Open Page Two</li></Link>
       <div className='nav-content'>
     <Switch>
       <Route path='/routeone' exact component={PageOne}/>

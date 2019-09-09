@@ -32,6 +32,39 @@
   margin-bottom: 2%;
 }
 
+.autocomplete-div {
+  width: 25%;
+  height: 300px;
+  background-color:#4f44f4;
+  border: 3px black solid;
+  padding-bottom: 150px;
+  margin-bottom: 10px;
+}
+
+.autocomplete-header {
+  height: 18px;
+  margin-top: 15px;
+}
+
+.name-search{
+  width:60%;
+}
+
+.name-list {
+  height: 80%;
+  line-height: 1.2em;
+  margin-top: 3px;
+}
+
+.name-list li {
+  font-size: 20px;
+}
+
+li span {
+  position: relative;
+  left: -10%;
+}
+
 .clock-header {
   padding-left: 1em;
   padding-right: 1em;
@@ -50,12 +83,10 @@
   border-radius: 3%;
 }
 
-.nav-div li {
-
-}
-
 .nav-link {
   color: white;
+  list-style-type: none;
+  margin-top:10px;
 }
 
 a {
@@ -66,6 +97,8 @@ a {
   margin-top: 30px;
   padding-bottom: 120px;
   border: 3px solid tomato;
+  background-color:#f0f0f0;
+  color: black;
 }
 
 .tabs-container {

@@ -5,18 +5,22 @@ import Clock from './Components/Clock';
 import Tabs from './Components/Tabs';
 import Typing from './Components/Typing';
 import RouteTest from './Components/RouteTest'
+import Autocomplete from './Components/Autocomplete'
 
 
 class App extends React.Component {
 
   state = {
-    Tabs : [
+    Tabs: [
       {title:'One',
       content: 'Content One'},
       {title:'Two',
       content: 'Content Two'},
       {title:'Three',
       content: 'Content Three'}
+    ],
+    AutocompleteNames: [
+      'Abigail', 'Allison', 'Damion', 'David', 'Hillary','Leroy', 'Mira', 'Molly', 'Sarah'
     ]
   }
 
@@ -26,6 +30,9 @@ class App extends React.Component {
       <div className="App-header">
         <Typing />
         <Calculator />
+        <Autocomplete
+          names= {this.state.AutocompleteNames}
+        />
         <Clock />
         <RouteTest />
         <Tabs
