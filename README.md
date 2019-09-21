@@ -10,6 +10,12 @@
 - Refactor and optimize code
 - Use a linter and fix the code
 
+### Styled-Component
+- Update styled component to look more appealing
+- Explore and implement more complicated selectors
+- Try out styled-component animations
+- Read up on Sever Side Rendering w/ Styled-Components
+
 ### Autocomplete Widget
 - Fix CSS for listed names bulet points
 
