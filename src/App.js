@@ -6,6 +6,7 @@ import Tabs from './Components/Tabs';
 import Typing from './Components/Typing';
 import RouteTest from './Components/RouteTest'
 import Autocomplete from './Components/Autocomplete'
+import StyledComponent from './Components/StyledComponent'
 
 
 class App extends React.Component {
@@ -30,6 +31,7 @@ class App extends React.Component {
       <div className="App-header">
         <Typing />
         <Calculator />
+        <StyledComponent />
         <Autocomplete
           names= {this.state.AutocompleteNames}
         />
